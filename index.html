@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <section>
         <nav>
-            <img src="./HTML Practise Assets/FES.svg" alt="">
+            <img src="./HTML Practise Assets/FES.svg" class="logo" alt="">
         
             <ul>
                 <li><a href=#about>About</a></li>
@@ -17,41 +18,51 @@
             </ul>
         </nav>
         <header>
+            <div class="row">
             <div>
                 <h1>Best place to learn frontend</h1>
-                <p>Go from being an absolute beginner to pro with a simplified plan</p>
-                <button>Star now</button>
+                <p class="subheader">Go from being an absolute beginner to pro with a simplified plan</p>
+                <button>Start now</button>
             </div>
             <figure>
                 <img src="./HTML Practise Assets/laptop.png" alt="Home page image">
             </figure>
+            </div>
         </header>
     </section> 
     
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+                <div class="section__description--wrapper">
+                <p class="section__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="section__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            <figure class="about__img--wrapper">
                 <img src="./HTML Practise Assets/about.jpg" alt="">
             </figure>
+            </div>
+        </div>
         </section>
 
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+            <figure class="about __img--wrapper">
                 <img src="./HTML Practise Assets/discord.png" alt="Discord">
             </figure>
-            <div>
-                <p>
+            <div class="section__description--wrapper">
+                <p class="section__description--para">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <p>
+                <p class="section__description--para">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+            </div>
+            </div>
             </div>
         </section>
 
@@ -61,18 +72,19 @@
                 <label>Email</label>
                 <input type="text" placeholder="jane@example.com">
                 <label>Message</label>
-                <textarea type="text" placeholder="jane@example.com"></textarea>
+                <textarea type="text" placeholder="Cool, website, lets get connected!"></textarea>
+                <button>Contact Us!</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="./HTML Practise Assets/FES.svg" alt=""
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer__logo" src="./HTML Practise Assets/FES.svg" alt=""
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="courses">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
